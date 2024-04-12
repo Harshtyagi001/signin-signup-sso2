@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,32 +7,40 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #37474F; /* Dark blue-gray background */
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            color: #fff; /* White text color */
         }
 
         form {
-            background-color: #fff;
+            background-color: #263238; /* Dark teal background */
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Dark shadow */
             width: 300px;
         }
 
         h2 {
             text-align: center;
-            color: #333;
+            color: #FFEB3B; /* Yellow header color */
+            margin-bottom: 20px; /* Added margin bottom for separation */
+        }
+
+        h3 {
+            text-align: center;
+            color: #FFEB3B; /* Yellow subheader color */
+            margin-bottom: 20px; /* Added margin bottom for separation */
         }
 
         label {
             display: block;
             margin-bottom: 5px;
-            color: #333;
+            color: #fff; /* White text color */
         }
 
         input[type="text"],
@@ -43,31 +48,34 @@
             width: 100%;
             padding: 8px;
             margin-bottom: 10px;
-            border: 1px solid #ccc;
+            border: 1px solid #FFC107; /* Yellow border */
             border-radius: 5px;
             box-sizing: border-box;
+            background-color: #455A64; /* Dark blue-gray input background */
+            color: #fff; /* White text color */
         }
 
         button[type="submit"] {
-            background-color: #007bff;
-            color: #fff;
+            background-color: #FFC107; /* Yellow button background */
+            color: #263238; /* Dark teal button text color */
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             width: 100%;
             font-size: 16px;
+            transition: background-color 0.3s; /* Smooth transition on hover */
         }
 
         button[type="submit"]:hover {
-            background-color: #0056b3;
+            background-color: #FFD54F; /* Lighter yellow on hover */
         }
     </style>
 </head>
 <body>
-    <h2>Welcome</h2>
-    <h3>Complete Your Profile</h3>
     <form action="/complete-profile" method="POST">
+        <h2>Welcome</h2>
+        <h3>Complete Your Profile</h3>
         <div>
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" value="<%= user.username %>" required>

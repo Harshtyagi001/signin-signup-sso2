@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
+  <title>Welcome to Dashboard</title>
   <link rel="stylesheet" href="/styles.css">
   <style>
     body {
@@ -12,36 +12,46 @@
       justify-content: center;
       height: 100vh;
       margin: 0;
-      background-color: #f5f5f5;
+      background-color: #3949ab; /* Dark blue background */
+      color: #fff; /* White text color */
+      font-family: Arial, sans-serif;
     }
 
     main {
-      background-color: #fff;
+      background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Dark shadow */
       padding: 20px;
       width: 80%;
     }
 
     h1 {
       text-align: center;
-      color: #333;
+      color: #fff; /* White header color */
+      margin-bottom: 20px; /* Added margin bottom for separation */
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 20px;
+      background-color: #fff; /* White background for table */
+      color: #333; /* Dark text color for table */
     }
 
     th, td {
-      border: 1px solid #ddd;
+      border: 1px solid #ccc; /* Light gray border */
       padding: 10px;
       text-align: left;
     }
 
+    th {
+      background-color: #3949ab; /* Dark blue background for table header */
+      color: #fff; /* White text color for table header */
+    }
+
     a {
-      color: #007bff;
+      color: #f44336; /* Red link color */
       text-decoration: none;
       display: inline-block;
       margin-top: 10px; /* Adjust the margin as needed */
@@ -53,7 +63,6 @@
 
     .logout-link,
     .success-link,
-    .login-data,
     .user-data {
       text-align: center;
       margin-top: 20px;
@@ -61,15 +70,13 @@
 
     .logout-link a,
     .success-link a,
-    .login-data a,
     .user-data a {
-      color: #007bff;
+      color: #f44336; /* Red link color */
       text-decoration: none;
     }
 
     .logout-link a:hover,
     .success-link a:hover,
-    .login-data a:hover,
     .user-data a:hover {
       text-decoration: underline;
     }
